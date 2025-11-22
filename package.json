@@ -1,23 +1,32 @@
 {
 	"name": "mern-crash-course",
 	"version": "1.0.0",
-	"description": "",
+	"description": "<h1 align=\"center\">MERN Crash Course 🚀</h1>",
+	"keywords": [],
+	"homepage": "https://github.com/mycomport/mern-crash-course#readme",
+	"bugs": {
+		"url": "https://github.com/mycomport/mern-crash-course/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mycomport/mern-crash-course.git"
+	},
+	"license": "ISC",
+	"author": "",
+	"type": "module",
 	"main": "index.js",
 	"scripts": {
-		"dev": "NODE_ENV=development nodemon backend/server.js",
+		"dev": "cross-env NODE_ENV=development nodemon backend/server.js",
 		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-		"start": "NODE_ENV=production node backend/server.js"
+		"start": "cross-env NODE_ENV=production node backend/server.js"
 	},
-	"type": "module",
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
 	"dependencies": {
-		"dotenv": "^16.4.5",
-		"express": "^4.19.2",
-		"mongoose": "^8.5.1"
+		"cross-env": "^10.1.0",
+		"dotenv": "^16.6.1",
+		"express": "^4.21.2",
+		"mongoose": "^8.19.1"
 	},
 	"devDependencies": {
-		"nodemon": "^3.1.4"
+		"nodemon": "^3.1.10"
 	}
 }

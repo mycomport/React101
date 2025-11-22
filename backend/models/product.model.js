@@ -4,22 +4,22 @@ const productSchema = new mongoose.Schema(
 	{
 		name: {
 			type: String,
-			required: true,
+			required: true
 		},
 		price: {
 			type: Number,
-			required: true,
+			required: true
 		},
 		image: {
 			type: String,
-			required: true,
+			required: true
 		},
 	},
 	{
-		timestamps: true, // createdAt, updatedAt
+		timestamps: true // createdAt, updatedAt
 	}
 );
 
-const Product = mongoose.model("Product", productSchema);
+const Product = mongoose.model('Product', productSchema);
 
 export default Product;
